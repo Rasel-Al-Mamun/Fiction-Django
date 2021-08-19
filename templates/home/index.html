@@ -1,0 +1,33 @@
+{% extends 'base/_base.html' %}
+
+{% load static %}
+
+{% block keywords %} {% endblock %}
+
+{% block description %} {% endblock %}
+
+{% block title %} Home {% endblock %}
+
+{% block extrahead %} {% endblock %}
+
+{% block extrastyle %} {% endblock %}
+
+{% block header %} {% include 'partials/_header.html' %} {% endblock %}
+
+{% block content %}
+
+{% include 'home/content/_header.html' %}
+
+{% include 'home/content/_study.html' %}
+
+{% include 'home/content/_client.html' %}
+
+{% include 'home/content/_team.html' %}
+
+{% include 'home/content/_contact.html' %}
+
+{% endblock %}
+
+{% block footer %} {% include 'partials/_footer.html' %} {% endblock %}
+
+{% block extrascripts %} {% endblock %}

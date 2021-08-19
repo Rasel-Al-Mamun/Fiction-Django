@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+{% load static %}
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="{% block keywords %} {% endblock %}">
+  <meta name="description" content="{% block description %} {% endblock %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Fiction | {% block title %} {% endblock %}</title>
+
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+
+  {% include 'base/_css.html' %}
+
+  {% block extrahead %} {% endblock %}
+
+  {% block extrastyle %} {% endblock %}
+</head>
+
+<body>
+
+  <div class="loading">
+    <div class="windows8 loading-position">
+      <div class="wBall" id="wBall_1">
+        <div class="wInnerBall"></div>
+      </div>
+      <div class="wBall" id="wBall_2">
+        <div class="wInnerBall"></div>
+      </div>
+      <div class="wBall" id="wBall_3">
+        <div class="wInnerBall"></div>
+      </div>
+      <div class="wBall" id="wBall_4">
+        <div class="wInnerBall"></div>
+      </div>
+      <div class="wBall" id="wBall_5">
+        <div class="wInnerBall"></div>
+      </div>
+    </div>
+  </div>
+
+  {% block header %} {% endblock %}
+
+  {% block content %} {% endblock %}
+
+  {% block footer %} {% endblock %}
+
+  {% include 'base/_scripts.html' %}
+
+  {% block extrascripts %} {% endblock %}
+
+</body>
+
+</html>
